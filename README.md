@@ -39,6 +39,37 @@ module.exports.cron = {
 
 https://crontab.guru/ or https://cronjob.xyz/ might be useful to validate the cron schedule.
 
+
+
+## Cron Syntax
+
+This is a quick reference to cron syntax and also shows the options supported by node-cron.
+
+### Allowed fields
+
+```
+ # ┌────────────── second (optional)
+ # │ ┌──────────── minute
+ # │ │ ┌────────── hour
+ # │ │ │ ┌──────── day of month
+ # │ │ │ │ ┌────── month
+ # │ │ │ │ │ ┌──── day of week
+ # │ │ │ │ │ │
+ # │ │ │ │ │ │
+ # * * * * * *
+```
+
+### Allowed values
+
+|     field    |        value        |
+|--------------|---------------------|
+|    second    |         0-59        |
+|    minute    |         0-59        |
+|     hour     |         0-23        |
+| day of month |         1-31        |
+|     month    |     1-12 (or names) |
+|  day of week |     0-7 (or names, 0 or 7 are sunday)  |
+
 ## Examples
 
 You can create a cronjob and start\stop them manually:
