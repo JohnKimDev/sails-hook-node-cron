@@ -1,10 +1,5 @@
 # sails-hook-node-cron
 
-![Downloads](https://img.shields.io/npm/dm/sails-hook-node-cron.svg)
-![Downloads](https://img.shields.io/npm/dt/sails-hook-node-cron.svg)
-![npm version](https://img.shields.io/npm/v/sails-hook-node-cron.svg)
-![License](https://img.shields.io/npm/l/sails-hook-node-cron.svg)
-
 Sails hook for running cron tasks using [node-cron](https://www.npmjs.com/package/node-cron).
 
 ## Getting Started
@@ -37,13 +32,12 @@ module.exports.cron = {
 };
 ```
 
-https://crontab.guru/ or https://cronjob.xyz/ might be useful to validate the cron schedule.
-
-
-
 ## Cron Syntax
 
 This is a quick reference to cron syntax and also shows the options supported by node-cron.
+
+https://crontab.guru/ or https://cronjob.xyz/ might be useful to validate the cron schedule.
+Please note that these sites may not accept the SECOND field so you can you them as reference but you should check your run result after.
 
 ### Allowed fields
 
