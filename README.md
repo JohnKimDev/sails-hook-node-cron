@@ -4,11 +4,11 @@ Sails hook for running cron tasks using [node-cron](https://www.npmjs.com/packag
 
 ## Getting Started
 
-This is a SailsJS's hook for cron task using node-cron. The difference between this package and other popular SailsJS's cron hook, [sails-hook-cron](https://www.npmjs.com/package/sails-hook-cron), is using [cron](https://www.npmjs.com/package/cron) package whereas `sails-hook-node-cron` uses `node-cron` as main package to run a cron task.  
+This is a SailsJS's hook for cron task using node-cron. The difference between this package and other popular SailsJS's cron hook, [sails-hook-cron](https://www.npmjs.com/package/sails-hook-cron), is using [cron](https://www.npmjs.com/package/cron) package whereas this *sails-hook-node-cron* uses [node-cron](https://www.npmjs.com/package/node-cron) as main package to run a cron task.  
 
-The reason I chose `node-cron` package as a cron runner is b/c `node-cron` uses pure javascript code (setTimeout) to run a scheduled task whereas `cron` package uses `child_process` (https://www.npmjs.com/package/child_process) package and spwan may causes security issue and more memory to run. For security and efficiency, I created this new SailsJS hook package.
+The reason I prefer *node-cron* package as a cron runner is b/c *node-cron* uses pure javascript code (setTimeout) to run a scheduled task whereas *cron* package uses [child_process](https://www.npmjs.com/package/child_process) package and *spwan* which is used in *child_process* may cause a security issue and more memory to run. 
 
-For any user who switching from sails-hook-cron package, you will see that the parameter fields are very similiar with sails-hook-cron. You should be able to simply change the package without rewriting the cron configuration.
+If you are switching from sails-hook-cron package, you will see that the parameter fields are similar with sails-hook-cron. You should be able to simply change the package without rewriting the cron configuration.
 
 ### Installation
 
