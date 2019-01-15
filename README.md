@@ -4,11 +4,11 @@ Sails hook for running cron tasks using [node-cron](https://www.npmjs.com/packag
 
 ## Getting Started
 
-This is a SailsJS's hook for cron jobs using [node-cron](https://www.npmjs.com/package/node-cron). The difference between this package and another popular SailsJS's cron hook, `sails-hook-cron` is that `sails-hook-cron` is using [cron](https://www.npmjs.com/package/cron) package whereas this **`sails-hook-node-cron`** uses [node-cron](https://www.npmjs.com/package/node-cron) as main package to run cron jobs.  
+This is a SailsJS's hook for cron jobs using [node-cron](https://www.npmjs.com/package/node-cron). The difference between this package and another popular SailsJS's cron hook, `sails-hook-cron` is that `sails-hook-cron` uses the [cron](https://www.npmjs.com/package/cron) package whereas this **`sails-hook-node-cron`** uses the [node-cron](https://www.npmjs.com/package/node-cron) as a main package to run cron jobs.  
 
 ---
 
-I prefer **node-cron** package as acron runner, because **node-cron** uses pure javascript codes (setTimeout) to run a scheduled task whereas *cron* package uses **child_process** for **spwan** command. Using **child_process** *may* open injection vulnerabilities. I prefer not to use a command injection if possible, especially by 3rd party packages. Also if you are running multiple cron jobs, using spawned child_process may use more memory for the server. So for the efficiency and security reasons, I have created this new cron hook package for SailsJS.
+I prefer **node-cron** package as a cron jobs runner, because **node-cron** uses a pure javascript code (setTimeout) to run a scheduled task whereas *cron* package uses **child_process** for **spwan** command. Using **child_process** *may* open injection vulnerabilities. I prefer not to use a command injection if possible, especially by 3rd party packages. Also if you are running multiple cron jobs, using spawned child_process may use more memory for the server. So for the efficiency and security reasons, I have created this new cron hook package for SailsJS.
 Happy Coding!
 
 ---
